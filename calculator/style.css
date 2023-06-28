@@ -39,6 +39,8 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  color: white;
+  padding-right: 1rem;
 }
 
 button {
@@ -51,6 +53,6 @@ button {
   color: white;
 }
 
-.leftarrow {
-  width: 8rem;
+.c {
+  margin-left: 8.5rem;
 }

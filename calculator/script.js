@@ -67,7 +67,7 @@ btnParent.addEventListener("click", (event) => {
   } else if (event.target.textContent === "=") {
     let result = calculate();
     display.textContent = result;
-    displayNumber = 0;
+    displayNumber = result;
     btnop.forEach(function (element) {
       element.removeAttribute("disabled");
     });

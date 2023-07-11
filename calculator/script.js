@@ -13,7 +13,8 @@ let op = "";
 function calculate() {
   const separators = ["+", "\\-", "*", "÷"];
   const separatorRegex = new RegExp("[" + separators.join("") + "]", "g");
-  let [num1, num2] = displayNumber.split(separatorRegex);
+  let num1 = displayNumber.split(separatorRegex)[0];
+  let num2 = displayNumber.split(separatorRegex)[1];
   op = displayNumber[num1.length];
   num1 = Number(num1);
   num2 = Number(num2);
@@ -53,12 +54,7 @@ btnParent.addEventListener("click", (event) => {
       });
     }
     console.log(displayNumber);
-  }
-  //  else if (event.target.textContent === "←") {
-  //   displayNumber = displayNumber.slice(0, -1);
-  //   display.textContent = displayNumber;
-  // }
-  else if (event.target.textContent === "c") {
+  } else if (event.target.textContent === "c") {
     displayNumber = 0;
     display.textContent = displayNumber;
     btnop.forEach(function (element) {

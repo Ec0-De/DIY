@@ -1,13 +1,55 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+}
+
+.App {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-todo {
+  width: 80%;
+  height: 20%;
+}
+
+.add-list,
+.rem-list {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgba(88, 179, 105, 0.5);
+  border-radius: 3px;
+  margin-right: 1rem;
+}
+
+.rem-list {
+  background-color: rgba(197, 44, 51, 0.5);
+}
+
+.input-list {
+  border: none;
+  background: none;
+  outline: none;
+  width: 80%;
 }
